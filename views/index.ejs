@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+
+<div class="nav">
+    <a href="index">主页</a>
+    <a href="record">记录</a>
+</div>
+
+<div class="main">
+    <div class="introduce">
+        <div>
+            <div>
+                <img src="images/img_01.png" alt="">
+                <h2>多种苹果ID售卖</h2>
+            </div>
+            <div><img src="images/applelogo.png" alt=""></div>
+        </div>
+    </div>
+    <form class="buy" target="frameFile" action="/pay" method="post">
+        <!--<form class="buy" action="/pay" method="post">-->
+        <iframe name='frameFile' style='display: none;'></iframe>
+        <h3>请选择需要购买的账号类型：</h3>
+        <div>
+            <label>国家与地区:</label>
+            <span class="radio_inline area">
+                <label class="radio radio_click area_radio" for="area_chn" onclick="areaClick(this,'chn')">中国大陆</label>
+                <input type="radio" name="area_radio" id="area_chn" style="display: none" value="chn" checked="checked">
+                <label class="radio area_radio" for="area_us" onclick="areaClick(this,'us')">美国</label>
+                <input type="radio" name="area_radio" id="area_us" style="display: none" value="us">
+            </span>
+        </div>
+        <div>
+            <label>购买的数量:</label>
+            <span class="radio_inline">
+                <label class="radio radio_click quantity_radio" for="quantity_1" onclick="quantityClick(this,'1')">1个 / ￥5</label>
+                <input type="radio" name="quantity_radio" id="quantity_1" style="display: none" value="1"
+                       checked="checked">
+                <label class="radio quantity_radio" for="quantity_5" onclick="quantityClick(this,'5')">5个 / ￥20</label>
+                <input type="radio" name="quantity_radio" id="quantity_5" style="display: none" value="5">
+        </span>
+        </div>
+        <input class="submit" type="submit" value="确认并支付" onclick="submitClick()">
+
+        <div class="qrcode">
+            <img class="qrcode_img" alt="二维码" src=''/>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="javascripts/javascript.js"></script>
+</body>
+</html>

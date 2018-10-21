@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* a {
+    text-decoration: none;
+    color: #616161;
+}
+
+/*导航栏*/
+.nav {
+    margin: 20px 0 20px 0;
+    background-color: #eeeeee;
+    height: 42px;
+}
+
+.nav > a {
+    color: #616161;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.nav > a:hover {
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid #1bcae2;
+}
+
+/*主体内容*/
+
+.introduce {
+    width: 100%;
+    height: 300px;
+    background: #f9f9f9;
+}
+
+.introduce > div {
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.introduce > div > div {
+    width: 200px;
+    float: left;
+}
+
+.introduce > div > div h2 {
+    font-weight: 100;
+}
+
+.introduce > div > div:first-child {
+    margin-top: 65px;
+}
+
+.introduce > div > div > img {
+    width: 200px;
+}
+
+/*购买模块*/
+
+.buy {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.buy > div {
+    margin-bottom: 20px;
+}
+
+.radio {
+    border: 1px black solid;
+    padding: 2px 8px 2px 8px;
+    margin-left: 10px;
+}
+
+.radio_inline {
+    /*cursor: pointer;*/
+    display: inline-block;
+}
+
+.radio_inline > *, .submit {
+    cursor: pointer;
+}
+
+.radio_click {
+    background: #444444;
+    color: white;
+}
+
+.submit {
+    background: white;
+    color: black;
+    border: 1px black solid;
+    box-shadow: 2px 2px #aeaeae;
+    padding: 3px 8px 3px 8px;
+
+}
+
+/*支付功能*/
+.qrcode {
+    display: none;
+}
+
+/*记录表*/
+.record_table {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.record_table > h3 {
+    font-weight: 100;
+}
+
+.record_table > .content {
+    width: 800px;
+    height: 700px;
+    background: #f9f9f9;
+}
